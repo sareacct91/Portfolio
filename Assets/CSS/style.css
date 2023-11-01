@@ -37,7 +37,7 @@ header h1 {
   display: flex;
   flex-wrap: wrap;
   font-size: 300%;
-  align-content: center ;
+  text-align: center;
   color: rgb(218, 199, 28);
 }
 
@@ -94,16 +94,16 @@ main figcaption {
     flex-direction: column;
   }
 
-  nav ul :nth-child(1) { order: 3; }
-  nav ul :nth-child(2) { order: 2; }
-  nav ul :nth-child(3) { order: 1; }
-
-  header:hover ul {
-    display: flex;
-  }
-
   nav a,
   nav a:visited {
     padding: 5px 0;
+  }
+  
+  nav ul :nth-child(1) { order: 3; }
+  nav ul :nth-child(2) { order: 2; }
+  nav ul :nth-child(3) { order: 1; }
+  
+  header:hover ul {
+    display: flex;
   }
 }
