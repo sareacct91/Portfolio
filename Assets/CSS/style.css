@@ -10,9 +10,15 @@ html {
   height: 100%;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+}
+
 /* Navigation Bar styling */
 nav {
   display: flex;
+  width: 100%;
   background-color: rgb(30, 13, 46);
   height: 75px;
   justify-content: end;
