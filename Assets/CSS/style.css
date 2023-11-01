@@ -22,7 +22,7 @@ body {
 header {
   min-height: 75px;
   width: 100%;
-  padding: 1%;
+  padding: 0 1%;
   position: fixed;
   top: 0;
   z-index: 1;
@@ -46,11 +46,14 @@ nav ul {
   display: flex;
   min-width: 500px;
   justify-content: space-evenly;
+  align-items: center;
   list-style: none;
 }
 
 nav a,
 nav a:visited {
+  display: block;
+  padding: 19px 0;
   text-decoration: none;
   color: rgb(218, 199, 28);
   font-size: 200%;
@@ -75,26 +78,32 @@ main figcaption {
 
 
 /* Media Selector */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   body {
     top: 111px;
   }
 
   header {
-    display: flex;
     flex-direction: column;
+    justify-content: center;
   }
 
   /* Navigation Bar */
   nav ul {
+    display: none;
     flex-direction: column;
   }
 
   nav ul :nth-child(1) { order: 3; }
   nav ul :nth-child(2) { order: 2; }
   nav ul :nth-child(3) { order: 1; }
-  
-  nav li {
-    margin: 0 auto;
+
+  header:hover ul {
+    display: flex;
+  }
+
+  nav a,
+  nav a:visited {
+    padding: 5px 0;
   }
 }
