@@ -1,5 +1,6 @@
 /* Universal Selector */
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -8,9 +9,12 @@
 /* Element Selector */
 html {
   height: 100%;
+  width: 100%;
 }
 
 body {
+  position: relative;
+  top: 50px;
   background-color: bisque;
 }
 
@@ -21,11 +25,15 @@ header {
 
 /* Navigation Bar styling */
 nav {
+  position: fixed;
+  top: 0;
   display: flex;
+  flex-wrap: wrap;
+  min-height: 75px;
   width: 100%;
   background-color: rgb(30, 13, 46);
-  height: 75px;
   justify-content: end;
+  z-index: 1;
 }
 
 nav ul {
@@ -44,6 +52,7 @@ nav a:visited {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
+  text-align: center;
   text-decoration: none;
   color: rgb(218, 199, 28);
   font-size: 200%;
@@ -53,7 +62,9 @@ nav a:visited {
 /* Title Styling */
 header h1 {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: center;
   font-size: 500%;
   margin-top: 50px;
 }
@@ -65,3 +76,35 @@ header figure {
 }
 
 /* Class Selector */
+
+
+
+
+@media screen and (max-width: 800px) {
+  body {
+    top: 111px;
+  }
+
+  /* Navigation Bar */
+  nav {
+    justify-content: center;
+  }
+
+  nav ul {
+    margin: 0;
+    flex-direction: column;
+  }
+  
+  nav li {
+    margin: 0 auto;
+  }
+
+  nav ul :nth-child(1) { order: 3; }
+  nav ul :nth-child(2) { order: 2; }
+  nav ul :nth-child(3) { order: 1; }
+
+  head figure {
+    width: fit-content;
+  }
+
+}
