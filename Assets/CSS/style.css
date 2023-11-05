@@ -5,9 +5,9 @@
   --nav-link-color: #8a7e15;
   --nav-link-hover-color: #ffe600;
   --text-color: #828828;
-  --img-bg-color: rgb(44, 13, 13)
+  --img-bg-color: rgb(44, 13, 13);
   /* Use for the width of side nav bar and main section offset*/
-  --width-offset: 20%;
+  --width-offset: 230px;
   --max-height: 100%;
 }
 
@@ -34,20 +34,6 @@ header {
 main {
   left: var(--width-offset);
   width: calc(100% - var(--width-offset));
-}
-
-/* My image styling */
-main figure {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-main figcaption {
-  text-align: center;
-  width: 75%;
-  border: 3px solid black;
-  border-radius: 5px;
 }
 
 /* Class Selector - basic */
@@ -111,7 +97,6 @@ main figcaption {
   background-size: contain;
   background-position: center;
 }
-
 
 /* Media Selector */
 @media screen and (max-width: 900px) {
