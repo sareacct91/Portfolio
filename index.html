@@ -3,43 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Assets/CSS/reset.css">
   <link rel="stylesheet" href="./Assets/CSS/style.css">
   <title>Sarun Portfolio</title>
 </head>
 <body>
-  <header>
+
+  <header class="column">
     <figure>
       <img 
-        class="block"
-        src="./Assets/Images/icon-placeholder.png" alt="placeholder for profile picture">
-      <figcaption><h1>Sarun Thunyapauksanon</h1></figcaption>
+        class="profile-img block"
+        src="./Assets/Images/icon-placeholder.png" 
+        alt="placeholder for profile picture">
+      <figcaption>
+        <h1 
+          class="profile-name row text-center">
+          Sarun Thunyapauksanon</h1>
+      </figcaption>
     </figure>
 
     <nav>
-      <ul>
+      <ul class="nav-list column">
         <li>
-          <a href="#projects">
+          <a href="#projects" 
+            class="nav-link block">
             Projects</a>
         </li>
         <li>
-          <a href="https://github.com/sareacct91" target="_blank">
+          <a href="https://github.com/sareacct91" target="_blank"
+            class="nav-link block" >
             Github</a>
         </li>
         <li>
-          <a href="#contact-me">
+          <a href="#contact-me" 
+            class="nav-link block">
             Contact Me</a>
         </li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <figure>
-      <img src="./Assets/Images/placeholder.png" alt="placeholder picture">
-      <figcaption>
-        <h2>About Me</h2>
-        <p>asdfasdf asdf asdf asd fas fas fdaskdf jasklfdhj alsfhaslk fjasklf jas fajsk fajslkf jasfjlkasf jas fkjlaskjl;f askfl; asf;lk asifo jaskfld asfhaskj fdhaskufdhas fhaslk fhasl fhasfd hasl;kfh asldhf alishf al;sdhf ;lafjaisdf hjlaskjfalksjdf akshfd la jfdoia sdflakjsdf iasd</p>
-    </figure>
+  <main class="relative column">
+    <section class="backgroundImg block"></section>
+
+    <section>
+      <h2>About Me</h2>
+      <p>asdfasdf asdf asdf asd fas fas fdaskdf jasklfdhj alsfhaslk fjasklf jas fajsk fajslkf jasfjlkasf jas fkjlaskjl;f askfl; asf;lk asifo jaskfld asfhaskj fdhaskufdhas fhaslk fhasl fhasfd hasl;kfh asldhf alishf al;sdhf ;lafjaisdf hjlaskjfalksjdf akshfd la jfdoia sdflakjsdf iasd</p>
+    </section>
 
     <section id="projects">
       <h2>Project</h2>

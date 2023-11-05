@@ -1,72 +1,39 @@
+:root {
+  --background-color: #e5ffff;
+  --nav-bar-color: #301449;
+  --nav-profile-color: #dac71c;
+  --nav-link-color: #8a7e15;
+  --nav-link-hover-color: #ffe600;
+  --text-color: #828828;
+  --img-bg-color: rgb(44, 13, 13)
+  /* Use for the width of side nav bar and main section offset*/
+  --width-offset: 20%;
+  --max-height: 100%;
+}
+
 /* Universal Selector */
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  color: rgb(130, 136, 40);
+  color: var(--text-color);
 }
 
 /* Element Selector */
-html {
-  height: 100%;
-  width: 100%;
-}
-
 body {
-  position: relative;
-  top: 50px;
-  background-color: rgb(12, 4, 37);
+  background-color: var(--background-color);
 }
 
 header {
-  min-height: 100%;
-  width: 300px;
+  background-color: var(--nav-bar-color);
+  min-height: var(--max-height);
+  width: var(--width-offset);
   padding: 0 1%;
   position: fixed;
-  top: 0;
   z-index: 1;
-  display: flex;
-  flex-direction: column;
-  background-color: rgb(30, 13, 46);
 }
 
-/* Title Styling */
-header h1 {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 150%;
-  text-align: center;
-  color: rgb(218, 199, 28);
-}
-
-header img {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  margin: 5px auto;
-}
-/* Navigation Bar styling */
-nav ul {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-}
-
-nav a,
-nav a:visited {
-  display: block;
-  padding: 19px 0;
-  text-decoration: none;
-  color: rgb(138, 126, 21);
-  font-size: 120%;
-  font-weight: 100;
-}
-
-nav a:hover {
-  color: rgb(255, 230, 0);
-  /* border: 1px solid rgb(255, 230, 0); */
+main {
+  left: var(--width-offset);
+  width: calc(100% - var(--width-offset));
 }
 
 /* My image styling */
@@ -83,10 +50,68 @@ main figcaption {
   border-radius: 5px;
 }
 
-/* Class Selector */
+/* Class Selector - basic */
+.relative {
+  position: relative;
+}
+
 .block {
   display: block;
 }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* Class Selector */
+.profile-img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin: 5px auto;
+}
+
+.profile-name {
+  color: var(--nav-profile-color);
+  font-size: 150%;
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-link,
+.nav-link:visited {
+  padding: 19px 0;
+  text-decoration: none;
+  color: var(--nav-link-color);
+  font-size: 120%;
+  font-weight: 100;
+}
+
+.nav-link:hover {
+  color: var(--nav-link-hover-color);
+}
+
+.backgroundImg {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../Images/placeholder.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
 
 /* Media Selector */
 @media screen and (max-width: 900px) {
