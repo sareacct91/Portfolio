@@ -6,6 +6,7 @@
   --nav-link-hover-color: #ffe600;
   --text-color: #5d6128;
   --img-bg-color: rgb(44, 13, 13);
+  --img-project-glow: #21d5e2;
   /* Use for the width of side nav bar and main section offset*/
 }
 
@@ -150,6 +151,12 @@ a {
 .project-img {
   width: 90%;
 }
+
+.project-img:hover {
+  transition: box-shadow 0.3s ease-in-out;
+  box-shadow: 0 0 20px var(--img-project-glow), 
+    0 0 30px var(--img-project-glow);
+} 
 
 .icon-contact {
   width: 30%;
