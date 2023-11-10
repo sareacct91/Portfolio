@@ -1,12 +1,12 @@
 :root {
-  --background-color: #e5ffff;
-  --nav-bar-color: #301449;
-  --nav-profile-color: #dac71c;
+  --background-color: #cfe2f3;
+  --nav-bar-color: #141c64;
+  --nav-profile-color: #34495e;
   --nav-link-color: #b8a81f;
   --nav-link-hover-color: #ffe600;
-  --text-color: #5d6128;
+  --text-color: #34495e;
   --img-bg-color: rgb(44, 13, 13);
-  --img-project-glow: #21d5e2;
+  --img-project-glow: #0f1549;
   /* Use for the width of side nav bar and main section offset*/
 }
 
