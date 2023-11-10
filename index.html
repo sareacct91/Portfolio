@@ -3,52 +3,94 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Assets/CSS/reset.css">
   <link rel="stylesheet" href="./Assets/CSS/style.css">
   <title>Sarun Portfolio</title>
 </head>
 <body>
-  <header>
-    <h1>Sarun Portfolio</h1>
 
-    <nav>
-      <ul>
+  <header class="row just-end">
+    <nav class="nav-bar row">
+      <ul class="nav-list row just-around">
         <li>
-          <a href="#projects">
-            Projects</a>
-        </li>
+          <a href="#projects" class="nav-link">
+            Projects</a></li>
         <li>
-          <a href="https://github.com/sareacct91" target="_blank">
-            Github</a>
-        </li>
+          <a href="https://github.com/sareacct91" target="_blank" class="nav-link" >
+            Github</a></li>
         <li>
-          <a href="#contact-me">
-            Contact Me</a>
-        </li>
+          <a href="#contact-me" class="nav-link">
+            Contact Me</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <figure>
-      <img src="./Assets/Images/placeholder.png" alt="placeholder picture">
-      <figcaption>
+  <main class="column">
+    <section id="about-me" class="container column">
+      <figure class="column">
+        <img 
+          class="profile-img radius-circle"
+          src="./Assets/Images/icon-placeholder.png" 
+          alt="placeholder for profile picture">
+        <figcaption>
+          <h1 
+            class="row just-center">
+            Sarun Thunyapauksanon</h1>
+        </figcaption>
+      </figure>
+      <div>
         <h2>About Me</h2>
-        <p>asdfasdf asdf asdf asd fas fas fdaskdf jasklfdhj alsfhaslk fjasklf jas fajsk fajslkf jasfjlkasf jas fkjlaskjl;f askfl; asf;lk asifo jaskfld asfhaskj fdhaskufdhas fhaslk fhasl fhasfd hasl;kfh asldhf alishf al;sdhf ;lafjaisdf hjlaskjfalksjdf akshfd la jfdoia sdflakjsdf iasd</p>
-    </figure>
+        <h3>Full Stack Developer</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    </section>
 
-    <section id="projects">
+    <section id="projects" class="container column">
       <h2>Project</h2>
-      
+      <figure class="text-center"><figcaption>Code Refractor</figcaption>
+        <a href="https://sareacct91.github.io/Horiseon-Social-Solution-Services/" target="_blank" class="text-center">
+          <img 
+            src="./Assets/Images/HoriseonSS.jpg" alt=""
+            id="project1" class="project-img">
+        </a>
+      </figure>
+      <br>
+      <ul class="project-list column align-center">
+        <li class="row align-center text-center">
+          <figure><figcaption>Basic CSS</figcaption>
+            <a href="https://sareacct91.github.io/Landing-Page/" target="_blank">
+              <img src="./Assets/Images/Landing-page-SS.png" alt=""
+                id="project2" class="project-img">
+            </a>
+          </figure>
+        </li>
+        <li class="row align-center text-center">
+          <figure><figcaption>Advance CSS</figcaption>
+            <a href="https://sareacct91.github.io/CSS-Snippet-Cheatsheet/" target="_blank">
+              <img src="./Assets/Images/CSS-Snippet-SS.jpg" alt=""
+                id="project3" class="project-img">
+            </a>
+          </figure>
+        </li>
+      </ul>
     </section>
 
-    <section id="contact-me">
+    <section id="contact-me" class="container">
       <h2>Contact Me</h2>
-
+      <ul class="icon-contact row just-around">
+        <li><a href="#">
+          <img src="./Assets/Images/icon/LInkin-3.png" alt="linkin icon"></a></li>
+        <li><a href="mailto:sareacct91@gmail.com" class="icon">
+          <img src="./Assets/Images/icon/email.png" alt="email icon"></a></li>
+        <li><a href="#">
+          <img src="./Assets/Images/icon/Twitter.png" alt="twitter icon"></a></li>
+      </ul>
     </section>
-
   </main>
 
-  <footer></footer>
+  <footer>
+    <h3>asdfasdfasdf</h3>
+  </footer>
 
 </body>
 </html>
